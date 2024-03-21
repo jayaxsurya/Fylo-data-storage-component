@@ -5,27 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
   <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: #fff; }
   </style>
 </head>
 <body>
+  <div class="wrapper">
+    <div class="main">
+      <header>
+        <div class="header-content">
+          <div class="logo-div">
+            <img class="logo" alt="fylo logo" src="images/logo.svg">
+          </div>
+          <div class="menu-icons">
+            <div class="menu-icon" ><img src="images/icon-document.svg" alt="document"></div>
+            <div class="menu-icon" ><img src="images/icon-folder.svg" alt="folder"></div>
+            <div class="menu-icon" ><img src="images/icon-upload.svg" alt="upload"></div>
+          </div>
+        </div>
+      </header>
+      <main>
 
-  You’ve used 815 GB of your storage
+      <div class="message">You’ve used <span class="highlight">815 GB</span> of your storage</div>
 
-  185 GB Left
+      <div class="storage-bar">
+        <div class="storage-empty">
+            <div class="storage-used">
+              <div class="circle-indicator"></div>
+            </div>
+        </div>
+        <div class="bubble hide">
+          <div class="storage-left">
+            <span class="storage-left-msg"> 185</span> GB LEFT
+          </div>
+        </div>
+        
+      </div>
+      <div class="storage-label highlight">
+        <span class="zero-storage">0 GB</span> 
+        <span class="max-storage">1000 GB</span> 
+      </div>
+
+    </main>
+</div>
+</div>
   
-  0 GB
-  1000 GB
-  
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">JayaSurya</a>.
   </div>
 </body>
 </html>
